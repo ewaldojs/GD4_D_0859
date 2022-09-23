@@ -71,6 +71,10 @@
                         <i class="fa fa-film"></i>
                         <a href="./listMoviesPage.php" style="font-weight:600">List Movie</a>
                     </div>
+                    <div class="content-menu ">
+                        <i class= "fa fa-user"></i>
+                        <a href="./profilePage.php" style="font-weight:600">Profile</a>
+                    </div>
                     <div class="content-menu " >
                         <i class="fa fa-sign-out"></i>
                         <a href="../process/logoutMoviesProcess.php" style="font-weight:600">&nbspLogout</a>

@@ -29,15 +29,15 @@
                         <form action="../process/registerProcess.php"method="post">
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Name</label>
-                                <input class="form-control" id="name" name="name"aria-describedby="emailHelp">
+                                <input class="form-control" id="name" name="name"aria-describedby="emailHelp" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Phone Number</label>
-                                <input class="form-control" id="phonenum"name="phonenum" aria-describedby="emailHelp">
+                                <input class="form-control" id="phonenum"name="phonenum" aria-describedby="emailHelp" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Membership</label>
-                                <select class="form-select" aria-label="Default select example" name="membership" id="membership">
+                                <select class="form-select" aria-label="Default select example" name="membership" id="membership" required>
                                     <option value="Reguler">Reguler</option>
                                     <option value="Platinum">Platinum</option>
                                     <option value="Gold">Gold</option>
@@ -45,11 +45,11 @@
                             </div> 
                             <div class="mb-3"> 
                                 <label for="exampleInputEmail1" class="form-label">Email</label>
-                                <input class="form-control" id="email" name="email" aria-describedby="emailHelp">
+                                <input class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="password" name="password">
+                                <input type="password" class="form-control" id="password" name="password" required>
                             </div>
                             <div class="d-grid gap-2">
                                 <button type="submit" class="btn btn-primary" name="register">Register</button>
