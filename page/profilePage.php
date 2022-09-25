@@ -1,5 +1,8 @@
 <?php
 include '../component/sidebar.php';
+include( '../db.php');
+$query = mysqli_query($con, "SELECT * FROM users WHERE id = ". $_SESSION['user']['id']);
+$user = mysqli_fetch_assoc($query);
 ?>
 
 <div class="container p-3 m-4 h-100"
@@ -9,36 +12,20 @@ include '../component/sidebar.php';
 
     <form>
         <div class="mb-3">
-            <?php
-            echo'
             <label for="profile" class="form-label">Name</label>
-            <p class="form-control text-muted"> ' . $_SESSION['user']['name'] . '</p>
-            ';
-            ?>
+            <input class="form-control" id="name" name="name" aria-describedby="emailHelp" value="<?php echo $user['name']?>" disabled>
         </div>
         <div class="mb-3">
-            <?php
-            echo'
             <label for="profile" class="form-label">Phone Number</label>
-            <p class="form-control text-muted"> ' . $_SESSION['user']['phonenum'] . '</p>
-            ';
-            ?>
+            <input class="form-control" id="phonenum" name="phonenum" aria-describedby="emailHelp" value="<?php echo $user['phonenum']?>" disabled>
         </div>
         <div class="mb-3">
-            <?php
-            echo'
             <label for="profile" class="form-label">membership</label>
-            <p class="form-control text-muted"> ' . $_SESSION['user']['membership'] . '</p>
-            ';
-            ?>
+            <input class="form-control" id="membership" name="membership" aria-describedby="emailHelp" value="<?php echo $user['membership']?>" disabled>
         </div>
         <div class="mb-3">
-            <?php
-            echo'
-            <label for="profile" class="form-label">Email</label>
-            <p class="form-control text-muted"> ' . $_SESSION['user']['email'] . '</p>
-            ';
-            ?>
+            <label for="profile" class="form-label">email</label>
+            <input class="form-control" id="email" name="email" aria-describedby="emailHelp" value="<?php echo $user['email']?>" disabled>
         </div>
         <button type="button" class="btn btn-primary">
         <a class = "button" href="./editProfilePage.php">Edit Profile</a>

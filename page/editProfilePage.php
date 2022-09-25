@@ -46,7 +46,9 @@ solid #D40013; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 
                     <input class="form-control" id="email" name="email" aria-describedby="emailHelp" value="<?php echo $user['email']?>">
                 </div>
                 <div class="d-grid gap-2">
-                    <button type="submit" class="btn btn-dark" name="save">Save</button>
+                    <button type="submit" class="btn btn-dark" name="save">Save
+                    <a href="../page/profilePage.php"></a>
+                    </button>
                 </div>
             </form>
         </div>
